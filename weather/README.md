@@ -22,7 +22,7 @@
 - Launch the index script:
 
  ```
->index.js 
+>node index.js 
 ```
 
 ### List of flags with ```--help``` command 
