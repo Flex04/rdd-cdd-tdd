@@ -1,11 +1,18 @@
 # cli-weather
 
-#### List of modifications to do :
+<img alt="imgMeteo" src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Status-weather-showers-day-icon.png">
+
+#### List of tasks to launch the program :
 
 - Install  npm on node: 
 
  ```
 >npm i
+```
+- Launch the index script:
+
+ ```
+>index.js 
 ```
 
 ### List of flags with ```--help``` command 
