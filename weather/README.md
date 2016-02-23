@@ -9,6 +9,16 @@
  ```
 >npm i
 ```
+- Install  mocha on node: 
+
+ ```
+>npm install -g mocha
+```
+- Install  JSDoc on node: 
+
+ ```
+>npm install jsdoc
+```
 - Launch the index script:
 
  ```
