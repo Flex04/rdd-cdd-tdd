@@ -8,6 +8,11 @@ var args = require('./args'),
 
 var path = pathing.dirname(require.main.filename) + '/lib/config.json',
     help = require('./help');
+/*
+function Config()
+parameters : units {type: struct}
+             ip    {type: string} 
+*/
 
 function Config(units, ip) {
     this.args = parseArgs(process.argv.slice(2));
@@ -53,7 +58,12 @@ if(!String.prototype.includes) {
     };
 }
 
-
+/*
+function write()
+parameters :args  {type: string} 
+            units {type: struct}
+            ip    {type: string} 
+*/
 function write(args, units, ip) {
 
     console.log(chalk.red('you may have to use ') + chalk.bgBlack.white('sudo') +
@@ -73,6 +83,12 @@ function write(args, units, ip) {
 
 }
 
+/*
+function read()
+parameters :args  {type: string} 
+            units {type: struct}
+            ip    {type: string} 
+*/
 function read(args, units, ip) {
 
     if (args.c && !(args.s || args.save)) {
@@ -96,6 +112,12 @@ function read(args, units, ip) {
     }
 }
 
+/*
+function handleArgs()
+parameters :args  {type: string} 
+            units {type: struct}
+            ip    {type: string} 
+*/
 function handleArgs(argv, units, ip) {
 
     help(argv);
@@ -118,6 +140,11 @@ function handleArgs(argv, units, ip) {
 
 }
 
+/*
+function instance()
+parameters :units {type: struct}
+            ip    {type: string} 
+*/
 function instance(units, ip) {
     return new Config(units, ip);
 }
